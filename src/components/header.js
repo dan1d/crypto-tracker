@@ -1,9 +1,9 @@
 import React from 'react'
-import { View, Text } from 'react-native' 
+import { View, Text, StyleSheet } from 'react-native' 
 
 const Header = function(){
  return (
-     <View styles={headerContainer}>
+     <View style={headerContainer}>
         <Text style={header}>
             Crypto-Currency App.
         </Text>
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
   header: {
     fontWeight: "bold",
-    fonSize: 20
+    fontSize: 20
   }
 });
 
