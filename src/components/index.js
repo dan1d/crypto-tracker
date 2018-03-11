@@ -1,4 +1,4 @@
 import Header from "./header";
+import CryptoContainer from "./CryptoContainer";
 
-export { Header }
- 
+export { Header, CryptoContainer };
