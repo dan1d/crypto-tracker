@@ -1,4 +1,4 @@
-![Crypto tracker App.](relative/rn-crypto-app.jpeg?raw=true "Title")
+![Crypto tracker App.](rn-crypto-app.jpeg?raw=true)
 ## Crypto tracker app, built with react native/redux
 
 It pulls the top 15 cryptos from marketcap API.
