@@ -4,8 +4,11 @@ import { View, Text, StyleSheet } from 'react-native'
 const Header = function(){
  return (
      <View style={headerContainer}>
-        <Text style={header}>
-            Crypto-Currency App.
+        <Text style={title}>
+          CryptApp
+        </Text>
+        <Text style={subTitle}>
+          Marketcap top 15
         </Text>
     </View>
  )   
@@ -14,15 +17,23 @@ const Header = function(){
 const styles = StyleSheet.create({
   headerContainer: {
     display: "flex",
-    marginTop: 55,
-    alignItems: "center"
+    marginTop: 30,
+    padding: 10,
+    alignItems: "center",
+    borderBottomColor: "#323234",
+    borderBottomWidth: 3
   },
-  header: {
+  title: {
     fontWeight: "bold",
-    fontSize: 20
+    fontSize: 20,
+    color: "#ff6d00"
+  },
+  subTitle: {
+    color: "gray",
+    fontSize: 10
   }
 });
 
-const { headerContainer, header } = styles;
+const { headerContainer, title, subTitle } = styles;
 
 export default Header

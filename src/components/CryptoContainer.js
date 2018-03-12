@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { View, Text } from "react-native";
+import { View, Text, ScrollView, StyleSheet } from "react-native";
 import FetchCoinData from "../actions/fetchCoinData";
 import CoinCard from './CoinCard';
 import Spinner from 'react-native-loading-spinner-overlay';
@@ -11,8 +11,6 @@ class CryptoContainer extends Component {
   }
 
   renderCoin(coin, index){
-    console.log("COINCARD: ", CoinCard);
-    
     return (
       <CoinCard
         key={index}
@@ -21,6 +19,7 @@ class CryptoContainer extends Component {
         price_usd={coin.price_usd}
         percent_change_24h={coin.percent_change_24h}
         percent_change_7d={coin.percent_change_7d}
+        rank={coin.rank}
       />
     )
   }
@@ -49,9 +48,9 @@ class CryptoContainer extends Component {
       return this.renderSpinner()
     }
     return (
-      <View>
+      <ScrollView contentContainerStyle={style.contentContainer}>
         { this.renderCoinCards() }
-      </View>
+      </ScrollView>
     );
   }
 }
@@ -62,4 +61,10 @@ function mapStateToProps(state) {
   };
 }
 
+const style = StyleSheet.create({
+  contentContainer: {
+    paddingBottom: 100,
+    paddingTop: 10
+  }
+});
 export default connect(mapStateToProps, { FetchCoinData })(CryptoContainer);

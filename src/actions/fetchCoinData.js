@@ -10,7 +10,7 @@ export default async function FetchCoinData() {
   return async dispatch => {
     dispatch({ type: FETCHING_COIN_DATA });
     try {
-        let response = await axios.get(`${apiBaseURL}/v1/ticker/?limit=10`)
+        let response = await axios.get(`${apiBaseURL}/v1/ticker/?limit=15`)
         dispatch({
           type: FETCHING_COIN_DATA_SUCCESS,
           payload: response.data

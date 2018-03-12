@@ -9,7 +9,7 @@ export default class App extends React.Component {
   render() {
     return (
       <Provider store={Store}>
-        <View>
+        <View style={style.container}>
           <Header />
           <CryptoContainer />
         </View>
@@ -17,3 +17,9 @@ export default class App extends React.Component {
     );
   }
 }
+
+const style = StyleSheet.create({
+  container: {
+    backgroundColor: "#474749"
+  }
+});
