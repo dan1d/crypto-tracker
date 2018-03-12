@@ -1,6 +1,7 @@
-This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
+![Crypto tracker App.](relative/rn-crypto-app.jpeg?raw=true "Title")
+## Crypto tracker app, built with react native/redux
 
-Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
+It pulls the top 15 cryptos from marketcap API.
 
 ## Table of Contents
 
