@@ -19,8 +19,8 @@ const Store = createStore(
     middleware,
     devToolsEnhancer({
       name: Platform.OS,
-      hostname: "localhost",
-      port: 5678
+      hostname: "10.0.0.117",
+      port: 8000
     })
   )
 );
